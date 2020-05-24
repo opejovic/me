@@ -1,6 +1,6 @@
 export default {
   mode: 'spa',
-  router: { base: '/me/' },
+  // router: { base: '/me/' },
   /*
    ** Headers of the page
    */
