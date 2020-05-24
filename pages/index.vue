@@ -317,7 +317,21 @@
 export default {
   data() {
     return {
-      open: false
+      open: false,
+      title: 'Ognjen Pejović'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'OGNJENFLSTCKDEVLPR',
+          name: 'Full-Stack Web Developer',
+          content: 'Full-Stack Web Developer'
+        }
+      ]
     }
   },
   methods: {
