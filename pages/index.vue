@@ -296,8 +296,7 @@
           href="https://steveschoger.com/"
           class="border-b border-gray-900 pb-px text-gray-900"
           >Steve Schoger</a
-        >
-        and built with
+        >. It was built with
         <a
           href="https://tailwindcss.com/"
           class="border-b border-gray-900 pb-px text-gray-900"
