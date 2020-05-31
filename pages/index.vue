@@ -346,8 +346,8 @@ export default {
 .highlight {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0) 70%,
-    #0ac37c60 70%
+    rgba(255, 255, 255, 0) 65%,
+    #042aff3a 65%
   );
 }
 
