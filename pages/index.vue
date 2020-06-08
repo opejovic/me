@@ -5,7 +5,7 @@
         class="min-h-screen justify-center px-6"
         style="background-color: #181818;"
       >
-        <div>
+        <div class>
           <a
             target="_blank"
             href="https://www.github.com/opejovic"
