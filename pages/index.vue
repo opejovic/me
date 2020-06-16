@@ -2,10 +2,10 @@
   <div class="antialiased container min-h-screen">
     <div class="flex">
       <div
-        class="min-h-screen justify-center px-6"
+        class="min-h-screen px-6 flex flex-col items-center justify-center"
         style="background-color: #181818;"
       >
-        <div class>
+        <div>
           <a
             target="_blank"
             href="https://www.github.com/opejovic"
@@ -95,25 +95,33 @@
         </div>
       </div>
       <div
-        class="ml-6 text-white text-6xl font-bold tracking-tighter my-auto leading-none"
+        class="w-full ml-6 text-white font-bold my-auto leading-none flex items-center justify-center"
       >
-        <p>Hi,</p>
-        <p>I'm Ognjen,</p>
-        <p>a web developer.</p>
-        <div
-          class="text-2xl tracking-widest mt-5"
-          style="font-family: 'La Belle Aurore',cursive;"
-        >
-          <span class="text-red-400">Laravel</span> /
-          <span style="color: #41b883;">VueJS</span> /
-          <span style="color: #16bdca;">TailwindCSS</span>
+        <div class="">
+          <div
+            class="text-2xl tracking-tight md:text-4xl lg:text-6xl lg:tracking-tighter"
+          >
+            <p>Hi,</p>
+            <p>I'm Ognjen,</p>
+            <p>a web developer.</p>
+          </div>
+          <div
+            class="text-xl md:text-4xl tracking-widest mt-5"
+            style="font-family: 'La Belle Aurore',cursive;"
+          >
+            <span class="text-red-400">Laravel</span>
+            <span>&middot;</span>
+            <span style="color: #41b883;">VueJS</span>
+            <span>&middot;</span>
+            <span style="color: #16bdca;">TailwindCSS</span>
+          </div>
+          <a
+            href="mailto:ognjen@fullstacked.dev"
+            class="inline-block mt-8 border rounded border-teal-300 text-sm font-bold text-teal-300 py-4 px-4 font-mono tracking-normal"
+          >
+            Say hello
+          </a>
         </div>
-        <a
-          href="mailto:ognjen@fullstacked.dev"
-          class="border rounded border-teal-300 text-sm font-bold text-teal-300 py-4 px-4 font-mono tracking-normal"
-        >
-          Say hello
-        </a>
       </div>
     </div>
   </div>
