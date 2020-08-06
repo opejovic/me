@@ -37,7 +37,7 @@
         <div>
           <a
             target="_blank"
-            href="https://twitter.com/itsogio"
+            href="https://twitter.com/opejovic"
             class="block mt-6 flex align-center hover:text-gray-900"
           >
             <svg
