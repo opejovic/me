@@ -117,7 +117,7 @@
           </div>
           <a
             href="mailto:ognjen@fullstacked.dev"
-            class="inline-block mt-6 border rounded border-teal-300 text-sm font-bold text-teal-300 py-4 px-4 font-mono tracking-normal"
+            class="inline-block mt-8 border rounded border-teal-300 text-sm font-bold text-teal-300 py-4 px-4 font-mono tracking-normal"
           >
             Say hello
           </a>
