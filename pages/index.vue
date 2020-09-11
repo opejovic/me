@@ -168,6 +168,20 @@ export default {
       isLight: false
     }
   },
+
+  watch: {
+    isLight(newValue) {
+      // eslint-disable-next-line no-console
+      sessionStorage.setItem('isLight', JSON.stringify(newValue))
+    }
+  },
+
+  mounted() {
+    if (sessionStorage.isLight) {
+      this.isLight = JSON.parse(sessionStorage.getItem('isLight'))
+    }
+  },
+
   methods: {
     toggleMenu() {
       this.open = !this.open
