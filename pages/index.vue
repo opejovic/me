@@ -208,14 +208,6 @@ export default {
 </script>
 
 <style lang="css">
-/* .highlight {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 65%,
-    #042aff3a 65%
-  );
-} */
-
 @keyframes hello-particle {
   0% {
     transform: translateY(0);
