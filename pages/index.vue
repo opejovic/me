@@ -6,7 +6,7 @@
         :class="isLight ? 'bg-gray-300' : 'bg-gray-900'"
       >
         <div class="mb-auto mt-4">
-          <button class="hello-particle-1" @click="toggleTheme()">
+          <button class="hello-particle-1" @click="toggleTheme">
             <svg
               class="w-6"
               :class="isLight ? 'text-gray-700' : 'text-white'"
