@@ -144,15 +144,14 @@
           </div>
           <a
             href="mailto:ognjen@fullstacked.dev"
-            class="inline-block mt-8 border rounded  text-sm font-bold py-4 px-4 font-mono tracking-normal"
+            class="inline-block mt-8 border rounded text-sm font-bold py-4 px-4 font-mono tracking-normal"
             :class="
               isLight
                 ? 'border-teal-500 text-teal-500'
                 : 'border-teal-300 text-teal-300'
             "
+            >Say hello</a
           >
-            Say hello
-          </a>
         </div>
       </div>
     </div>
@@ -160,6 +159,7 @@
 </template>
 
 <script>
+/* npm run generate && gaa && gc -m 'Ok' && git push origin */
 export default {
   data() {
     return {
