@@ -11,7 +11,10 @@ module.exports = {
       },
       fontSize: {
         '7xl': '6rem'
-      }
+      },
+      backgroundColor: (theme) => ({
+        primary: '#000814'
+      })
     }
   },
   variants: {},
