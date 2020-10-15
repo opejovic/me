@@ -1,9 +1,9 @@
 <template>
-  <div class="antialiased" :class="isLight ? 'bg-gray-200' : 'bg-gray-800'">
+  <div class="antialiased" :class="isLight ? 'bg-gray-100' : 'bg-gray-900'">
     <div class="flex">
       <div
         class="min-h-screen px-6 flex flex-col items-center justify-center"
-        :class="isLight ? 'bg-gray-300' : 'bg-gray-900'"
+        :class="isLight ? 'bg-gray-200' : 'bg-gray-900'"
       >
         <div class="mb-auto mt-4">
           <button class="hello-particle-1" @click="toggleTheme">
@@ -121,7 +121,7 @@
       >
         <div>
           <div
-            class="text-2xl tracking-tight md:text-4xl lg:text-6xl lg:tracking-tighter"
+            class="text-3xl tracking-tight md:text-4xl lg:text-7xl font-extrabold  lg:tracking-tighter gradient-text"
             :class="isLight ? 'text-gray-900' : 'text-white'"
           >
             <p>Hi,</p>
@@ -222,5 +222,65 @@ export default {
 .hello-particle-1 {
   animation: hello-particle 1s ease-in-out 1s normal;
   animation-iteration-count: 3;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    264.51deg,
+    #ffe580 4.38%,
+    #ff7571 11.51%,
+    #ff7270 25.06%,
+    #ea5dad 36.04%,
+    #c2a0fd 47.63%,
+    #9867f0 59.03%,
+    #3bf0e4 69.96%,
+    #33ce43 83.74%,
+    #b2f4b6 95.62%
+  );
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-clip: border-box;
+  background-position: 58% 50%;
+  background-position-x: 58%;
+  background-position-y: 50%;
+  background-size: 500%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-clip: text;
+  -webkit-animation: gradient-shift 30s ease infinite;
+  animation-name: gradient-shift;
+  animation-duration: 30s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation: gradient-shift 30s ease infinite;
+  animation-name: gradient-shift;
+  animation-duration: 30s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 58% 50%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  75% {
+    background-position: 10% 50%;
+  }
+  to {
+    background-position: 58% 50%;
+  }
 }
 </style>
