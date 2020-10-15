@@ -122,7 +122,6 @@
         <div>
           <div
             class="text-3xl tracking-tight md:text-4xl lg:text-7xl font-extrabold  lg:tracking-tighter gradient-text"
-            :class="isLight ? 'text-gray-900' : 'text-white'"
           >
             <p>Hi,</p>
             <p>I'm Ognjen,</p>
