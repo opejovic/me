@@ -3,7 +3,7 @@
     <div class="flex">
       <div
         class="min-h-screen px-6 flex flex-col items-center justify-center"
-        :class="isLight ? 'bg-gray-200' : 'bg-gray-900'"
+        :class="isLight ? 'bg-gray-200' : ''"
       >
         <div class="mb-auto mt-4">
           <button class="hello-particle-1" @click="toggleTheme">
