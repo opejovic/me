@@ -1,115 +1,110 @@
 <template>
-  <div class="antialiased bg-gray-900">
+  <div class="antialiased bg-gray-900 cover-lines">
     <div class="flex">
       <div class="min-h-screen px-6 flex flex-col items-center justify-center">
         <div class="mb-auto"></div>
-        <div class="mb-auto -mt-4 px-4 py-6 rounded-lg border-2 border-white">
-          <div>
-            <a
-              target="_blank"
-              href="https://www.github.com/opejovic"
-              class=" flex align-center hover:text-primary"
+        <div class="mb-auto -mt-4 rounded bg-gray-800">
+          <a
+            target="_blank"
+            href="https://www.github.com/opejovic"
+            class="flex align-center border-b border-gray-900 w-full px-4 py-4 pb-4 transition duration-500 hover:bg-gray-900"
+          >
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22M9 19C4 20.5 4 16.5 2 16L9 19Z"
-                    :stroke="isLight ? '#4A5568' : '#FFFFFF'"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect width="25" height="25" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://twitter.com/opejovic"
-              class="mt-6 flex align-center hover:text-primary"
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22M9 19C4 20.5 4 16.5 2 16L9 19Z"
+                  :stroke="isLight ? '#4A5568' : '#FFFFFF'"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="25" height="25" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a
+            target="_blank"
+            href="https://twitter.com/opejovic"
+            class="flex align-center border-b border-gray-900 w-full px-4 py-4 pb-4 transition duration-500 hover:bg-gray-900"
+          >
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23.012 1.15663C22.0544 1.83211 20.9942 2.34874 19.872 2.68663C19.2698 1.99414 18.4694 1.50332 17.5791 1.28055C16.6888 1.05779 15.7515 1.11382 14.8941 1.44108C14.0367 1.76834 13.3005 2.35103 12.785 3.11034C12.2696 3.86966 11.9997 4.76896 12.012 5.68663V6.68663C10.2547 6.7322 8.51332 6.34244 6.94306 5.55207C5.37279 4.76171 4.02236 3.59526 3.01205 2.15663C3.01205 2.15663 -0.987953 11.1566 8.01205 15.1566C5.95257 16.5546 3.4992 17.2556 1.01205 17.1566C10.012 22.1566 21.012 17.1566 21.012 5.65663C21.0111 5.37808 20.9843 5.10022 20.932 4.82663C21.9527 3.82012 22.6729 2.54934 23.012 1.15663V1.15663Z"
-                  :stroke="isLight ? '#4A5568' : '#FFFFFF'"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/ognjen-pejovic-831a191b/"
-              class="mt-6 flex align-center hover:text-primary"
+              <path
+                d="M23.012 1.15663C22.0544 1.83211 20.9942 2.34874 19.872 2.68663C19.2698 1.99414 18.4694 1.50332 17.5791 1.28055C16.6888 1.05779 15.7515 1.11382 14.8941 1.44108C14.0367 1.76834 13.3005 2.35103 12.785 3.11034C12.2696 3.86966 11.9997 4.76896 12.012 5.68663V6.68663C10.2547 6.7322 8.51332 6.34244 6.94306 5.55207C5.37279 4.76171 4.02236 3.59526 3.01205 2.15663C3.01205 2.15663 -0.987953 11.1566 8.01205 15.1566C5.95257 16.5546 3.4992 17.2556 1.01205 17.1566C10.012 22.1566 21.012 17.1566 21.012 5.65663C21.0111 5.37808 20.9843 5.10022 20.932 4.82663C21.9527 3.82012 22.6729 2.54934 23.012 1.15663V1.15663Z"
+                :stroke="isLight ? '#4A5568' : '#FFFFFF'"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/ognjen-pejovic-831a191b/"
+            class="flex align-center w-full px-4 py-4 pb-4 transition duration-500 hover:bg-gray-900"
+          >
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.1715 8.17146C17.7628 8.17146 19.2889 8.8036 20.4141 9.92882C21.5393 11.054 22.1715 12.5802 22.1715 14.1715V21.1715H18.1715V14.1715C18.1715 13.641 17.9607 13.1323 17.5857 12.7572C17.2106 12.3822 16.7019 12.1715 16.1715 12.1715C15.641 12.1715 15.1323 12.3822 14.7572 12.7572C14.3822 13.1323 14.1715 13.641 14.1715 14.1715V21.1715H10.1715V14.1715C10.1715 12.5802 10.8036 11.054 11.9288 9.92882C13.054 8.8036 14.5802 8.17146 16.1715 8.17146V8.17146Z"
-                  :stroke="isLight ? '#4A5568' : '#FFFFFF'"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M6.17146 9.17146H2.17146V21.1715H6.17146V9.17146Z"
-                  :stroke="isLight ? '#4A5568' : '#FFFFFF'"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M4.17146 6.17146C5.27603 6.17146 6.17146 5.27603 6.17146 4.17146C6.17146 3.06689 5.27603 2.17146 4.17146 2.17146C3.06689 2.17146 2.17146 3.06689 2.17146 4.17146C2.17146 5.27603 3.06689 6.17146 4.17146 6.17146Z"
-                  :stroke="isLight ? '#4A5568' : '#FFFFFF'"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
+              <path
+                d="M16.1715 8.17146C17.7628 8.17146 19.2889 8.8036 20.4141 9.92882C21.5393 11.054 22.1715 12.5802 22.1715 14.1715V21.1715H18.1715V14.1715C18.1715 13.641 17.9607 13.1323 17.5857 12.7572C17.2106 12.3822 16.7019 12.1715 16.1715 12.1715C15.641 12.1715 15.1323 12.3822 14.7572 12.7572C14.3822 13.1323 14.1715 13.641 14.1715 14.1715V21.1715H10.1715V14.1715C10.1715 12.5802 10.8036 11.054 11.9288 9.92882C13.054 8.8036 14.5802 8.17146 16.1715 8.17146V8.17146Z"
+                :stroke="isLight ? '#4A5568' : '#FFFFFF'"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.17146 9.17146H2.17146V21.1715H6.17146V9.17146Z"
+                :stroke="isLight ? '#4A5568' : '#FFFFFF'"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4.17146 6.17146C5.27603 6.17146 6.17146 5.27603 6.17146 4.17146C6.17146 3.06689 5.27603 2.17146 4.17146 2.17146C3.06689 2.17146 2.17146 3.06689 2.17146 4.17146C2.17146 5.27603 3.06689 6.17146 4.17146 6.17146Z"
+                :stroke="isLight ? '#4A5568' : '#FFFFFF'"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
         </div>
       </div>
 
       <div
-        class="ml-6 text-white font-bold my-auto leading-none flex items-center  justify-center w-screen -ml-28"
+        class="ml-6 text-white font-bold my-auto leading-none flex items-center  justify-center max-w-6xl lg:w-screen"
       >
         <div>
           <div
-            class="text-5xl tracking-tight lg:text-7xl font-extrabold font-sans  lg:tracking-tighter gradient-text relative"
+            class="text-5xl md:text-7xl tracking-tight font-extrabold gradient-text relative"
           >
             <p>Hi,</p>
             <p>I'm Ognjen,</p>
             <p>a web developer.</p>
           </div>
+
           <svg
-            class="top-0 right-0 absolute m-10"
+            class="top-0 absolute right-0 m-10 w-32"
             width="175"
             height="64"
             viewBox="0 0 175 64"
@@ -196,18 +191,14 @@
           </svg>
 
           <div
-            class="text-xl md:text-4xl tracking-widest mt-5"
+            class="md:text-4xl tracking-tight mt-5"
             style="font-family: 'La Belle Aurore',cursive;"
           >
-            <span class="text-red-400">Laravel</span>
-            <span :class="isLight ? 'text-primary' : 'text-white'"
-              >&middot;</span
-            >
-            <span style="color: #41b883;">VueJS</span>
-            <span :class="isLight ? 'text-primary' : 'text-white'"
-              >&middot;</span
-            >
-            <span style="color: #16bdca;">TailwindCSS</span>
+            <span>Laravel</span>
+            <span>&middot;</span>
+            <span>VueJS</span>
+            <span>&middot;</span>
+            <span>TailwindCSS</span>
           </div>
           <a
             href="mailto:ognjen@fullstacked.dev"
@@ -219,34 +210,6 @@
             "
             >Say hello</a
           >
-          <svg
-            class="absolute left-0 bottom-0"
-            width="351"
-            height="285"
-            viewBox="0 0 351 285"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M71.524 282.641C67.8019 272.185 65.4415 261.896 66.7152 250.684C67.9773 239.574 73.1034 226.458 83.3379 220.592C91.7657 215.761 105.344 211.388 114.603 216.195C118.23 218.078 125.612 224.913 121.545 229.576C119.668 231.729 115.814 232.696 113.155 233.236C108.405 234.2 104.434 232.675 100.253 230.492C92.6831 226.54 85.4825 219.216 83.8637 210.446C81.6439 198.42 95.1651 189.69 103.708 184.157C109.766 180.233 116.663 175.743 123.655 173.725C128.438 172.344 132.268 172.196 136.266 175.142C140.301 178.114 144.903 181.861 143.865 187.484C143.254 190.793 139.72 189.811 138.201 187.744C133.092 180.793 131.699 171.391 133.243 163.033C135.605 150.245 145.602 140.639 156.876 135.162C165.49 130.978 178.138 139.187 177.814 148.997C177.697 152.508 173.839 152.619 171.11 152.302C162.097 151.256 167.853 134.853 170.149 130.595C173.462 124.45 177.739 119.064 182.498 113.982C186.533 109.672 190.9 104.45 196.17 101.607C197.749 100.755 199.747 99.3906 201.564 99.1363C203.43 98.875 205.546 99.9521 207.306 100.423C210.776 101.352 213.621 103.123 214.959 106.531C216.205 109.704 214.376 111.966 211.235 111.484C205.053 110.535 199.653 101.205 200.562 95.312C201.665 88.1549 205.616 82.2198 210.043 76.6736C213.824 71.9374 217.734 68.9474 223.112 66.2774C224.389 65.6433 226.466 64.3341 227.644 65.5443C228.499 66.423 231.416 70.2337 230.878 71.5019C229.866 73.8871 228.069 73.7163 227.056 71.6754C226.133 69.817 225.425 68.6553 226.711 66.7664C229.263 63.0165 231.913 59.3618 234.78 55.8405C239.612 49.9065 243.977 43.3333 247.946 36.7981C248.998 35.0666 250.05 32.5634 251.535 31.1543C253.702 29.0973 256.58 27.1586 258.386 24.7646"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-dasharray="10 10"
-            />
-            <path
-              d="M260.38 32.7911C260.169 32.1866 260.95 30.9506 261.919 29.7133C261.857 29.8859 261.794 30.0597 261.732 30.235C261.408 31.143 260.698 33.7008 260.38 32.7911Z"
-              fill="#C4C4C4"
-            />
-            <path
-              d="M241.903 21.7813C252.743 17.5255 262.934 11.2778 273.163 5.75497C275.072 4.7248 277.376 2.83032 279.518 2.30137C279.848 2.21971 278.564 3.94914 278.509 4.02046C273.133 10.9447 270.088 19.3718 264.846 26.3211C264.348 26.9804 259.91 31.4471 260.38 32.7911C260.698 33.7008 261.408 31.143 261.732 30.235C262.541 27.9614 263.379 25.9408 263.859 23.5466C264.15 22.0983 265.117 19.5186 264.842 18.0245C264.61 16.7696 264.058 17.4675 263.102 17.8538C261.099 18.6633 258.928 18.9613 256.881 19.6319C253.787 20.6459 250.423 21.689 247.516 23.1323C245.857 23.9561 244.536 25.4184 243.555 23.4434"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
         </div>
       </div>
     </div>
@@ -423,12 +386,12 @@ export default {
   }
 }
 
-.intro {
+.cover-lines {
   position: relative;
   z-index: 1;
 }
 
-.intro::before {
+.cover-lines::before {
   content: '';
   width: 100%;
   height: 100%;
@@ -437,6 +400,5 @@ export default {
   left: 0;
   z-index: -3;
   background: url('../assets/images/bg.svg') center/cover no-repeat;
-  /* background: url('../assets/images/patern.svg') center/cover no-repeat; */
 }
 </style>
