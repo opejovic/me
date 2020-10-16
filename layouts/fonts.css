@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Alliance-Regular";
+  src: local("Alliance-Regular"), url(~assets/fonts/Alliance-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Alliance-Medium";
+  src: local("Alliance-Medium"), url(~assets/fonts/Alliance-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Roboto-Mono-Light";
+  src: local("Roboto-Mono-Light"), url(~assets/fonts/RobotoMono-Light.ttf) format("truetype");
+}

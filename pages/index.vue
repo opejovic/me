@@ -3,7 +3,7 @@
     <div class="flex">
       <div class="min-h-screen px-6 flex flex-col items-center justify-center">
         <div class="mb-auto"></div>
-        <div class="mb-auto -mt-4 rounded bg-gray-800">
+        <div class="mb-auto -mt-4  bg-gray-800">
           <a
             target="_blank"
             href="https://www.github.com/opejovic"
@@ -92,11 +92,11 @@
       </div>
 
       <div
-        class="ml-6 text-white font-bold my-auto leading-none flex items-center  justify-center max-w-6xl lg:w-screen"
+        class="ml-3 lg:ml-0 my-auto leading-none flex items-center justify-center space-x-10 w-full px-10"
       >
         <div>
           <div
-            class="text-5xl md:text-7xl tracking-tight font-extrabold gradient-text relative"
+            class="text-5xl md:text-7xl tracking-tighter font-alliance font-extrabold gradient-text relative"
           >
             <p>Hi,</p>
             <p>I'm Ognjen,</p>
@@ -191,18 +191,17 @@
           </svg>
 
           <div
-            class="md:text-4xl tracking-tight mt-5"
-            style="font-family: 'La Belle Aurore',cursive;"
+            class="text-3xl mt-5 font-roboto-mono tracking-wider text-gray-300"
           >
             <span>Laravel</span>
             <span>&middot;</span>
-            <span>VueJS</span>
+            <span>Vue.js</span>
             <span>&middot;</span>
             <span>TailwindCSS</span>
           </div>
           <a
             href="mailto:ognjen@fullstacked.dev"
-            class="inline-block mt-8 border rounded text-sm font-bold py-4 px-4 font-mono tracking-normal relative text-teal-300"
+            class="inline-block mt-8 border text-sm font-bold py-4 px-4 font-mono tracking-normal relative text-teal-300"
             :class="
               isLight
                 ? 'border-teal-500 text-teal-500'
