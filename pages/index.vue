@@ -92,13 +92,13 @@
       </div>
 
       <div
-        class="ml-3 lg:ml-0 my-auto leading-none flex items-center justify-center space-x-10 w-full px-10"
+        class="ml-3 lg:ml-0 my-auto leading-none flex items-center justify-start md:justify-center space-x-10 w-full px-3 md:px-10"
       >
         <div>
           <div
-            class="text-5xl md:text-7xl tracking-tighter font-alliance font-extrabold gradient-text relative"
+            class="text-5xl md:text-7xl tracking-tighter font-alliance font-extrabold gradient-text relative z-10"
           >
-            <p>Hi,</p>
+            <p>Hi.</p>
             <p>I'm Ognjen,</p>
             <p>a web developer.</p>
           </div>
@@ -191,7 +191,7 @@
           </svg>
 
           <div
-            class="text-3xl mt-5 font-roboto-mono tracking-wider text-gray-300"
+            class="text-2xl md:text-3xl mt-5 font-roboto-mono tracking-wider text-gray-300"
           >
             <span>Laravel</span>
             <span>&middot;</span>
@@ -216,7 +216,7 @@
 </template>
 
 <script>
-/* npm run generate && gaa && gc -m 'Ok' && git push origin */
+/* npm run generate && gaa && gc -m 'commit' && npm run deploy */
 export default {
   data() {
     return {
@@ -314,53 +314,9 @@ export default {
   animation-direction: normal;
   animation-fill-mode: none;
   animation-play-state: running;
-  animation: gradient-shift 40s ease infinite;
+  animation: gradient-shift 33s ease infinite;
   animation-name: gradient-shift;
-  animation-duration: 40s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  -webkit-text-fill-color: transparent;
-}
-.gradient-bg {
-  background: linear-gradient(
-    264.51deg,
-    #ffe580 4.38%,
-    #ff7571 11.51%,
-    #ff7270 25.06%,
-    #ea5dad 36.04%,
-    #c2a0fd 47.63%,
-    #9867f0 59.03%,
-    #3bf0e4 69.96%,
-    #33ce43 83.74%,
-    #b2f4b6 95.62%
-  );
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-size: auto;
-  background-clip: border-box;
-  background-position: 58% 50%;
-  background-position-x: 58%;
-  background-position-y: 50%;
-  background-size: 500%;
-  -webkit-background-clip: border-box;
-  background-clip: border-box;
-  background-clip: border-box;
-  -webkit-animation: gradient-shift 10s ease infinite;
-  animation-name: gradient-shift;
-  animation-duration: 10s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation: gradient-shift 40s ease infinite;
-  animation-name: gradient-shift;
-  animation-duration: 40s;
+  animation-duration: 33s;
   animation-timing-function: ease;
   animation-delay: 0s;
   animation-iteration-count: infinite;
