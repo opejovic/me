@@ -56,12 +56,12 @@
       <!-- end menu on -->
 
       <div
-        id="animate"
-        data-animate-in="up"
         class="my-auto leading-none flex items-center justify-start md:justify-center space-x-10 w-full relative"
       >
         <div>
           <div
+            id="animateFirst"
+            data-animate-in="up"
             class="text-6xl md:text-7xl tracking-tighter font-alliance-medium text-white"
           >
             <h1 id="ognjen">
@@ -159,6 +159,8 @@
           </svg>
 
           <div
+            id="animateSecond"
+            data-animate-in="down"
             class="text-xl md:flex md:space-x-6 space-y-3 md:space-y-0 md:text-3xl mt-5 font-roboto-mono tracking-wider text-gray-300"
           >
             <div>Laravel</div>
@@ -213,9 +215,14 @@ export default {
     ognjen.classList.add('gradient-text')
 
     setTimeout(() => {
-      const text = document.getElementById('animate')
+      const text = document.getElementById('animateFirst')
       text.classList.add('in-view')
     }, 200)
+
+    setTimeout(() => {
+      const text = document.getElementById('animateSecond')
+      text.classList.add('in-view')
+    }, 400)
   },
 
   methods: {
