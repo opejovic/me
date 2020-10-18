@@ -1,6 +1,6 @@
 <template>
   <div
-    class="antialiased bg-gray-900 cover-lines min-h-screen"
+    class="antialiased bg-gray-900 text-white cover-lines min-h-screen"
     :class="open ? 'fixed' : ''"
   >
     <div class="lg:flex px-6 lg:px-0">
@@ -261,6 +261,27 @@ export default {
   animation-iteration-count: 3;
 }
 
+.cover-lines {
+  position: relative;
+  z-index: 0;
+}
+
+.cover-lines::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../assets/images/bg.svg') center/cover no-repeat;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
 .gradient-text {
   background: linear-gradient(
     264.51deg,
@@ -276,6 +297,7 @@ export default {
   );
   background-position: 58% 50%;
   background-size: 500%;
+  display: block;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-animation: gradient-shift 30s ease infinite;
@@ -296,26 +318,5 @@ export default {
   to {
     background-position: 58% 50%;
   }
-}
-
-.cover-lines {
-  position: relative;
-  z-index: 0;
-}
-
-.cover-lines::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url('../assets/images/bg.svg') center/cover no-repeat;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
 }
 </style>
