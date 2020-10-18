@@ -60,9 +60,10 @@
       >
         <div>
           <div
-            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium  text-white"
+            data-animate-in="up"
+            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium text-white"
           >
-            <h1 class="gradient-text">
+            <h1 id="ognjen">
               <p>Hi.</p>
               <p>I'm Ognjen,</p>
               <p>a web developer.</p>
@@ -206,17 +207,11 @@ export default {
     }
   },
 
-  watch: {
-    isLight(newValue) {
-      // eslint-disable-next-line no-console
-      sessionStorage.setItem('isLight', JSON.stringify(newValue))
-    }
-  },
-
   mounted() {
-    if (sessionStorage.isLight) {
-      this.isLight = JSON.parse(sessionStorage.getItem('isLight'))
-    }
+    setTimeout(() => {
+      const ognjen = document.getElementById('ognjen')
+      ognjen.classList.add('gradient-text')
+    }, 10000)
   },
 
   methods: {
@@ -305,6 +300,30 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+@supports (-webkit-text-fill-color: transparent) {
+  .gradient-text {
+    background: linear-gradient(
+      264.51deg,
+      #ffe580 4.38%,
+      #ff7571 11.51%,
+      #ff7270 25.06%,
+      #ea5dad 36.04%,
+      #c2a0fd 47.63%,
+      #9867f0 59.03%,
+      #3bf0e4 69.96%,
+      #33ce43 83.74%,
+      #b2f4b6 95.62%
+    );
+    background-position: 58% 50%;
+    background-size: 500%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-animation: gradient-shift 30s ease infinite;
+    animation: gradient-shift 30s ease infinite;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 @keyframes gradient-shift {
   0% {
     background-position: 58% 50%;
@@ -318,5 +337,58 @@ body {
   to {
     background-position: 58% 50%;
   }
+}
+
+// ---------------------------------------------------------------------
+//  Animate In
+// ---------------------------------------------------------------------
+
+[data-animate-in] {
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+[data-animate-in='up'] {
+  transform: translate3d(0, 12px, 0);
+}
+
+[data-animate-in='left'] {
+  transform: translate3d(-25%, 0, 0);
+}
+
+[data-animate-in='right'] {
+  transform: translate3d(25%, 0, 0);
+}
+
+[data-animate-in='down'] {
+  transform: translate3d(0, -12px, 0);
+}
+
+[data-animate-in='fade'] {
+  transform: translate3d(0, 0, 0);
+}
+
+[data-animate-in].in-view {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.page-loaded .fade-in,
+.page-loaded.fade-in {
+  opacity: 1;
+}
+
+.isSafari.isTouch [data-animate-in],
+.isSafari.isTouch [data-animate-in='up'] {
+  opacity: 1;
+  transition: none;
+  transform: none;
 }
 </style>
