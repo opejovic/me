@@ -62,7 +62,7 @@
           <div
             class="text-6xl md:text-7xl tracking-tighter font-alliance-medium relative text-white"
           >
-            <h1>
+            <h1 class="gradient-text">
               <p>Hi.</p>
               <p>I'm Ognjen,</p>
               <p>a web developer.</p>
