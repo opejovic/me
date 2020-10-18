@@ -15,7 +15,7 @@
 
       <!-- Menu on sm -->
       <div class="block lg:hidden h-64">
-        <button class="pt-10 relative" @click="toggleMenu">
+        <button class="pt-10 relative focus:outline-none" @click="toggleMenu">
           <svg
             class="text-white w-10"
             viewBox="0 0 20 20"
@@ -155,13 +155,13 @@
           </svg>
 
           <div
-            class="text-xl md:text-3xl mt-5 font-roboto-mono tracking-wider text-gray-300"
+            class="text-xl md:flex md:space-x-6 space-y-3 md:space-y-0 md:text-3xl mt-5 font-roboto-mono tracking-wider text-gray-300"
           >
-            <span>Laravel</span>
-            <span>&middot;</span>
-            <span>Vue.js</span>
-            <span>&middot;</span>
-            <span>TailwindCSS</span>
+            <div>Laravel</div>
+            <span class="hidden md:block">&middot;</span>
+            <div>Vue.js</div>
+            <div class="hidden md:block">&middot;</div>
+            <div>TailwindCSS</div>
           </div>
           <a
             href="mailto:ognjen@fullstacked.dev"
