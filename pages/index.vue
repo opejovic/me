@@ -60,12 +60,13 @@
       >
         <div>
           <div
-            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium gradient-text relative text-white"
-            style="z-index: 999 !important;"
+            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium relative text-white"
           >
-            <p>Hi.</p>
-            <p>I'm Ognjen,</p>
-            <p>a web developer.</p>
+            <h1>
+              <p>Hi.</p>
+              <p>I'm Ognjen,</p>
+              <p>a web developer.</p>
+            </h1>
           </div>
 
           <svg
