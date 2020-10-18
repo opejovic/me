@@ -13,9 +13,9 @@ module.exports = {
         'roboto-mono': ['roboto-mono-light', 'mono']
       },
       fontSize: {
-        '6xl': '6rem',
-        '7xl': '7rem',
-        '8xl': '8rem'
+        '6xl': '4rem',
+        '7xl': '6rem',
+        '8xl': '7rem'
       },
       backgroundColor: (theme) => ({
         primary: '#000814'
