@@ -60,7 +60,7 @@
       >
         <div>
           <div
-            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium gradient-text relative"
+            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium gradient-text relative text-white"
             style="z-index: 999 !important;"
           >
             <p>Hi.</p>
@@ -273,35 +273,12 @@ export default {
     #33ce43 83.74%,
     #b2f4b6 95.62%
   );
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-size: auto;
-  background-clip: border-box;
   background-position: 58% 50%;
-  background-position-x: 58%;
-  background-position-y: 50%;
   background-size: 500%;
   -webkit-background-clip: text;
   background-clip: text;
-  background-clip: text;
-  -webkit-animation: gradient-shift 10s ease infinite;
-  animation-name: gradient-shift;
-  animation-duration: 10s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation: gradient-shift 33s ease infinite;
-  animation-name: gradient-shift;
-  animation-duration: 33s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
+  -webkit-animation: gradient-shift 30s ease infinite;
+  animation: gradient-shift 30s ease infinite;
   -webkit-text-fill-color: transparent;
 }
 
