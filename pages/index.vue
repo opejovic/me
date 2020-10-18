@@ -14,7 +14,7 @@
       <!-- end menu on lg -->
 
       <!-- Menu on sm -->
-      <div class="block lg:hidden h-64">
+      <div class="block lg:hidden pb-20">
         <button class="pt-10 relative focus:outline-none" @click="toggleMenu">
           <svg
             class="text-white w-10"
@@ -56,11 +56,11 @@
       <!-- end menu on -->
 
       <div
-        class="my-auto leading-none flex items-center justify-start md:justify-center space-x-10 w-full"
+        class="my-auto leading-none flex items-center justify-start md:justify-center space-x-10 w-full relative"
       >
         <div>
           <div
-            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium relative text-white"
+            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium  text-white"
           >
             <h1 class="gradient-text">
               <p>Hi.</p>
@@ -70,7 +70,7 @@
           </div>
 
           <svg
-            class="top-0 absolute right-0 mt-10 mr-8 md:mr-12 w-32"
+            class="absolute right-0 bottom-0 -mb-32 mr-8 md:mr-12 w-32"
             width="175"
             height="64"
             viewBox="0 0 175 64"
@@ -300,7 +300,7 @@ export default {
 
 .cover-lines {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .cover-lines::before {
@@ -310,13 +310,12 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -3;
   background: url('../assets/images/bg.svg') center/cover no-repeat;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
 }
 </style>
