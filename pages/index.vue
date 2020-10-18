@@ -56,11 +56,12 @@
       <!-- end menu on -->
 
       <div
+        id="animate"
+        data-animate-in="up"
         class="my-auto leading-none flex items-center justify-start md:justify-center space-x-10 w-full relative"
       >
         <div>
           <div
-            data-animate-in="up"
             class="text-6xl md:text-7xl tracking-tighter font-alliance-medium text-white"
           >
             <h1 id="ognjen">
@@ -208,10 +209,13 @@ export default {
   },
 
   mounted() {
+    const ognjen = document.getElementById('ognjen')
+    ognjen.classList.add('gradient-text')
+
     setTimeout(() => {
-      const ognjen = document.getElementById('ognjen')
-      ognjen.classList.add('gradient-text')
-    }, 10000)
+      const text = document.getElementById('animate')
+      text.classList.add('in-view')
+    }, 200)
   },
 
   methods: {
@@ -298,30 +302,6 @@ body {
   -webkit-animation: gradient-shift 30s ease infinite;
   animation: gradient-shift 30s ease infinite;
   -webkit-text-fill-color: transparent;
-}
-
-@supports (-webkit-text-fill-color: transparent) {
-  .gradient-text {
-    background: linear-gradient(
-      264.51deg,
-      #ffe580 4.38%,
-      #ff7571 11.51%,
-      #ff7270 25.06%,
-      #ea5dad 36.04%,
-      #c2a0fd 47.63%,
-      #9867f0 59.03%,
-      #3bf0e4 69.96%,
-      #33ce43 83.74%,
-      #b2f4b6 95.62%
-    );
-    background-position: 58% 50%;
-    background-size: 500%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-animation: gradient-shift 30s ease infinite;
-    animation: gradient-shift 30s ease infinite;
-    -webkit-text-fill-color: transparent;
-  }
 }
 
 @keyframes gradient-shift {
