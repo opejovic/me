@@ -60,7 +60,7 @@
       >
         <div>
           <div
-            class="text-6xl md:text-7xl tracking-tight md:tracking-normal font-alliance font-extrabold gradient-text relative z-10"
+            class="text-6xl md:text-7xl tracking-tight font-alliance-medium gradient-text relative z-10 opacity-1"
           >
             <p>Hi.</p>
             <p>I'm Ognjen,</p>
@@ -68,7 +68,7 @@
           </div>
 
           <svg
-            class="top-0 absolute right-0 m-10 w-32"
+            class="top-0 absolute right-0 mt-10 mr-8 md:mr-12 w-32"
             width="175"
             height="64"
             viewBox="0 0 175 64"
@@ -165,7 +165,7 @@
           </div>
           <a
             href="mailto:ognjen@fullstacked.dev"
-            class="inline-block mt-8 border text-sm font-bold py-4 px-4 font-mono tracking-normal relative text-teal-300"
+            class="inline-block mt-8 border text-sm font-bold py-4 px-4 font-roboto-mono tracking-normal relative text-teal-300"
             :class="
               isLight
                 ? 'border-teal-500 text-teal-500'
