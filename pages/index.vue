@@ -60,7 +60,7 @@
       >
         <div>
           <div
-            class="text-6xl md:text-7xl tracking-tighter font-alliance font-extrabold gradient-text relative z-10"
+            class="text-6xl md:text-7xl tracking-tight md:tracking-normal font-alliance font-extrabold gradient-text relative z-10"
           >
             <p>Hi.</p>
             <p>I'm Ognjen,</p>
