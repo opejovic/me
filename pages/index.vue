@@ -60,7 +60,8 @@
       >
         <div>
           <div
-            class="text-6xl md:text-7xl tracking-tight font-alliance-medium gradient-text relative z-10 opacity-1"
+            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium gradient-text relative"
+            style="z-index: 999 !important;"
           >
             <p>Hi.</p>
             <p>I'm Ognjen,</p>
@@ -333,5 +334,11 @@ export default {
   left: 0;
   z-index: -3;
   background: url('../assets/images/bg.svg') center/cover no-repeat;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 </style>
