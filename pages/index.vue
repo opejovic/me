@@ -96,7 +96,7 @@
       >
         <div>
           <div
-            class="text-5xl md:text-7xl tracking-tighter font-alliance font-extrabold gradient-text relative z-10"
+            class="text-5xl md:text-6xl tracking-tighter font-alliance font-extrabold gradient-text relative z-10"
           >
             <p>Hi.</p>
             <p>I'm Ognjen,</p>
@@ -191,7 +191,7 @@
           </svg>
 
           <div
-            class="text-2xl md:text-3xl mt-5 font-roboto-mono tracking-wider text-gray-300"
+            class="text-xl md:text-3xl mt-5 font-roboto-mono tracking-wider text-gray-300"
           >
             <span>Laravel</span>
             <span>&middot;</span>
