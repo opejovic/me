@@ -1,5 +1,5 @@
 <template functional>
-  <div class="mb-auto -mt-4  bg-gray-800">
+  <div class="mb-auto -mt-4  bg-gray-800" style="z-index: 10;">
     <a
       target="_blank"
       href="https://www.github.com/opejovic"
