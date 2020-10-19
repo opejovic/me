@@ -1,6 +1,6 @@
 <template>
   <div
-    class="antialiased bg-gray-900 text-white cover-lines min-h-screen"
+    class="antialiased bg-gray-900 text-white cover-lines min-h-screen page-ready"
     :class="open ? 'fixed' : ''"
   >
     <div class="lg:flex px-6 lg:px-0">
@@ -211,18 +211,24 @@ export default {
   },
 
   mounted() {
+    document.body.classList.add('page-loading')
+
+    setTimeout(() => {
+      document.body.classList.add('page-ready')
+    }, 400)
+
     const ognjen = document.getElementById('ognjen')
     ognjen.classList.add('gradient-text')
 
     setTimeout(() => {
       const text = document.getElementById('animateFirst')
       text.classList.add('in-view')
-    }, 200)
+    }, 600)
 
     setTimeout(() => {
       const text = document.getElementById('animateSecond')
       text.classList.add('in-view')
-    }, 400)
+    }, 800)
   },
 
   methods: {
@@ -373,5 +379,16 @@ body {
   opacity: 1;
   transition: none;
   transform: none;
+}
+
+.page-loading {
+  opacity: 0;
+  background: #1a202c;
+  transition: opacity 0.6s ease;
+}
+
+.page-ready {
+  transition-delay: 1s ease;
+  opacity: 1;
 }
 </style>
