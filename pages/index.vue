@@ -327,6 +327,8 @@ body {
   animation: gradient-shift 30s ease infinite;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 [data-animate-in] {
