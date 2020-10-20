@@ -64,20 +64,11 @@
             data-animate-in="up"
             class="text-6xl md:text-7xl tracking-tighter font-alliance-medium"
           >
-            <div class="block md:hidden" id="some">
-              <h1 class="text-red-400">
-                <p>Hi.</p>
-                <p>I'm Ognjen,</p>
-                <p>a web developer.</p>
-              </h1>
-            </div>
-            <div class="hidden md:block">
-              <h1 class="gradient-text">
-                <p>Hi.</p>
-                <p>I'm Ognjen,</p>
-                <p>a web developer.</p>
-              </h1>
-            </div>
+            <h1 class="gradient-text text-transparent">
+              <p>Hi.</p>
+              <p>I'm Ognjen,</p>
+              <p>a web developer.</p>
+            </h1>
           </div>
 
           <svg
@@ -296,6 +287,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
+  line-height: 1;
 }
 
 .gradient-text {
@@ -313,12 +305,10 @@ body {
   );
   background-position: 58% 50%;
   background-size: 500%;
-  display: block;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-animation: gradient-shift 30s ease infinite;
   animation: gradient-shift 30s ease infinite;
-  -webkit-text-fill-color: transparent;
 }
 
 @keyframes gradient-shift {
