@@ -57,7 +57,7 @@
 
       <div
         class="my-auto leading-none flex items-center justify-start md:justify-center space-x-10 w-full relative"
-        style="z-inded: 10000 !important;"
+        style="z-index: 99 !important;"
       >
         <div>
           <div
