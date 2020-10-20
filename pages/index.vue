@@ -63,9 +63,9 @@
           <div
             id="animateFirst"
             data-animate-in="up"
-            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium"
+            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium gradient-text"
           >
-            <h1 class="gradient-text text-transparent">
+            <h1>
               <p>Hi.</p>
               <p>I'm Ognjen,</p>
               <p>a web developer.</p>
@@ -291,6 +291,21 @@ body {
   line-height: 1;
 }
 
+@keyframes gradient-shift {
+  0% {
+    background-position: 58% 50%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  75% {
+    background-position: 10% 50%;
+  }
+  to {
+    background-position: 58% 50%;
+  }
+}
+
 .gradient-text {
   background: linear-gradient(
     264.51deg,
@@ -310,21 +325,8 @@ body {
   background-clip: text;
   -webkit-animation: gradient-shift 30s ease infinite;
   animation: gradient-shift 30s ease infinite;
-}
-
-@keyframes gradient-shift {
-  0% {
-    background-position: 58% 50%;
-  }
-  25% {
-    background-position: 100% 0%;
-  }
-  75% {
-    background-position: 10% 50%;
-  }
-  to {
-    background-position: 58% 50%;
-  }
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 [data-animate-in] {
@@ -369,13 +371,6 @@ body {
   opacity: 1;
 }
 
-.isSafari.isTouch [data-animate-in],
-.isSafari.isTouch [data-animate-in='up'] {
-  opacity: 1;
-  transition: none;
-  transform: none;
-}
-
 .text-gradient-blue {
   background: linear-gradient(89.46deg, #2188ff 0.87%, #804eda 75.12%);
   -webkit-background-clip: text;
@@ -410,51 +405,5 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-main,
-audio,
-canvas,
-video,
-svg {
-  display: block;
-}
-
-textarea {
-  overflow: auto;
-  resize: vertical;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
 }
 </style>
