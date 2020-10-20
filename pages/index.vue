@@ -64,11 +64,20 @@
             data-animate-in="up"
             class="text-6xl md:text-7xl tracking-tighter font-alliance-medium"
           >
-            <h1 id="ognjen" class="text-white">
-              <p>Hi.</p>
-              <p>I'm Ognjen,</p>
-              <p>a web developer.</p>
-            </h1>
+            <div class="block md:hidden" id="some">
+              <h1 class="text-red-400">
+                <p>Hi.</p>
+                <p>I'm Ognjen,</p>
+                <p>a web developer.</p>
+              </h1>
+            </div>
+            <div class="hidden md:block">
+              <h1 class="gradient-text">
+                <p>Hi.</p>
+                <p>I'm Ognjen,</p>
+                <p>a web developer.</p>
+              </h1>
+            </div>
           </div>
 
           <svg
@@ -211,10 +220,9 @@ export default {
   },
 
   mounted() {
-    const ognjen = document.getElementById('ognjen')
     setTimeout(() => {
-      ognjen.classList.add('gradient-text')
-    }, 100)
+      document.getElementById('some').classList.add('gradient-text')
+    }, 3000)
 
     setTimeout(() => {
       const text = document.getElementById('animateFirst')
