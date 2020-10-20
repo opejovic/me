@@ -1,6 +1,6 @@
 <template>
   <div
-    class="antialiased bg-gray-900 text-white cover-lines min-h-screen page-ready"
+    class="antialiased bg-primary text-white cover-lines min-h-screen page-ready"
     :class="open ? 'fixed' : ''"
   >
     <div class="lg:flex px-6 lg:px-0">
@@ -212,7 +212,9 @@ export default {
 
   mounted() {
     const ognjen = document.getElementById('ognjen')
-    ognjen.classList.add('gradient-text')
+    setTimeout(() => {
+      ognjen.classList.add('gradient-text')
+    }, 50)
 
     setTimeout(() => {
       const text = document.getElementById('animateFirst')

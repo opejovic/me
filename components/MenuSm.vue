@@ -1,9 +1,9 @@
 <template functional>
-  <div class="mb-auto -mt-4  bg-gray-800 shadow">
+  <div class="mb-auto -mt-4  bg-secondary shadow">
     <a
       target="_blank"
       href="https://www.github.com/opejovic"
-      class="flex items-center align-center justify-center space-x-6 border-b border-gray-900 w-full px-4 py-4 pb-4 transition duration-500 hover:bg-gray-900"
+      class="flex items-center align-center justify-center space-x-6 border-b border-primary w-full px-4 py-4 pb-4 transition duration-500 hover:bg-primary"
     >
       <svg
         width="25"
@@ -21,7 +21,7 @@
     <a
       target="_blank"
       href="https://twitter.com/opejovic"
-      class="flex items-center align-center justify-center space-x-6 border-b border-gray-900 w-full px-4 py-4 pb-4 transition duration-500 hover:bg-gray-900"
+      class="flex items-center align-center justify-center space-x-6 border-b border-primary w-full px-4 py-4 pb-4 transition duration-500 hover:bg-primary"
     >
       <svg fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
         <path
@@ -33,7 +33,7 @@
     <a
       target="_blank"
       href="https://www.linkedin.com/in/ognjen-pejovic-831a191b/"
-      class="flex items-center align-center justify-center space-x-6 border-b border-gray-900 w-full px-4 py-4 pb-4 transition duration-500 hover:bg-gray-900"
+      class="flex items-center align-center justify-center space-x-6 border-b border-primary w-full px-4 py-4 pb-4 transition duration-500 hover:bg-primary"
     >
       <svg fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
         <path

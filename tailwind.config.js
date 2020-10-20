@@ -18,7 +18,12 @@ module.exports = {
         '8xl': '7rem'
       },
       backgroundColor: (theme) => ({
-        primary: '#000814'
+        primary: '#011322',
+        secondary: '#02213b'
+      }),
+      borderColor: (theme) => ({
+        primary: '#011322',
+        secondary: '#02213b'
       })
     }
   },
