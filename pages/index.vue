@@ -65,7 +65,7 @@
             data-animate-in="up"
             class="text-6xl md:text-7xl tracking-tighter font-alliance-medium"
           >
-            <h1 class="text-gradient-purple text-transparent">
+            <h1 class="gradient-text text-transparent">
               <p>Hi.</p>
               <p>I'm Ognjen,</p>
               <p>a web developer.</p>
@@ -410,5 +410,51 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main,
+audio,
+canvas,
+video,
+svg {
+  display: block;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 </style>
