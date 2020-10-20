@@ -62,9 +62,9 @@
           <div
             id="animateFirst"
             data-animate-in="up"
-            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium text-white"
+            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium"
           >
-            <h1 id="ognjen">
+            <h1 id="ognjen" class="text-white">
               <p>Hi.</p>
               <p>I'm Ognjen,</p>
               <p>a web developer.</p>
@@ -214,7 +214,7 @@ export default {
     const ognjen = document.getElementById('ognjen')
     setTimeout(() => {
       ognjen.classList.add('gradient-text')
-    }, 50)
+    }, 100)
 
     setTimeout(() => {
       const text = document.getElementById('animateFirst')
