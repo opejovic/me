@@ -65,7 +65,7 @@
             data-animate-in="up"
             class="text-6xl md:text-7xl tracking-tighter font-alliance-medium"
           >
-            <h1 class="gradient-text text-transparent">
+            <h1 class="text-gradient-purple text-transparent">
               <p>Hi.</p>
               <p>I'm Ognjen,</p>
               <p>a web developer.</p>
@@ -374,5 +374,41 @@ body {
   opacity: 1;
   transition: none;
   transform: none;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(89.46deg, #2188ff 0.87%, #804eda 75.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient-purple {
+  background: linear-gradient(87.54deg, #9867f0 -6.8%, #ed4e50 84.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-red {
+  background: linear-gradient(
+    53.13deg,
+    #ffd33d 0%,
+    #fb8532 19.02%,
+    #ea4a5a 37.19%,
+    #8a63d2 56.92%,
+    #2188ff 79.93%,
+    #34d058 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-pink {
+  background: linear-gradient(
+    92.05deg,
+    #bca1f7 12.09%,
+    #e577b4 42.58%,
+    #ff7170 84.96%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
