@@ -1,6 +1,8 @@
 <template>
   <div
     class="antialiased bg-primary text-white cover-lines min-h-screen page-ready"
+    style="-moz-osx-font-smoothing: grayscale !important;
+    color: #fff !important;"
     :class="open ? 'fixed' : ''"
   >
     <div class="lg:flex px-6 lg:px-0">
