@@ -67,7 +67,8 @@
           <div
             id="animateFirst"
             data-animate-in="up"
-            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium text-gradient-pink text-teal-500"
+            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium bg-gradient-to-tr from-indigo-700 via-red-400 to-pink-500"
+            style="background-clip: text; -webkit-text-fill-color: transparent;"
           >
             <h1>
               <p>Hi.</p>
@@ -341,7 +342,6 @@ body {
   -webkit-animation: gradient-shift 30s ease infinite;
   animation: gradient-shift 30s ease infinite;
   -webkit-text-fill-color: transparent;
-  color: transparent;
 }
 
 [data-animate-in] {
