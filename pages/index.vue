@@ -8,6 +8,8 @@
     <div class="lg:flex px-6 lg:px-0">
       <!-- menu on lg -->
       <div
+        id="sidebar"
+        data-animate-in="left"
         class="hidden min-h-screen px-6 lg:flex flex-col items-center justify-center"
       >
         <div class="mb-auto"></div>
@@ -65,7 +67,7 @@
           <div
             id="animateFirst"
             data-animate-in="up"
-            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium gradient-text"
+            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium text-gradient-pink text-teal-500"
           >
             <h1>
               <p>Hi.</p>
@@ -75,6 +77,8 @@
           </div>
 
           <svg
+            id="signature"
+            data-animate-in="right"
             class="absolute right-0 bottom-0 -mb-32 mr-8 md:mr-12 w-32"
             width="175"
             height="64"
@@ -163,7 +167,7 @@
 
           <div
             id="animateSecond"
-            data-animate-in="down"
+            data-animate-in="up"
             class="text-xl md:flex md:space-x-6 space-y-3 md:space-y-0 md:text-3xl mt-5 font-roboto-mono tracking-wider text-gray-300"
           >
             <div>Laravel</div>
@@ -173,6 +177,8 @@
             <div>TailwindCSS</div>
           </div>
           <a
+            id="animateThird"
+            data-animate-in="up"
             href="mailto:ognjen@fullstacked.dev"
             class="inline-block mt-8 border text-sm font-bold py-4 px-4 font-roboto-mono tracking-normal relative text-teal-300"
             :class="
@@ -215,8 +221,12 @@ export default {
 
   mounted() {
     setTimeout(() => {
-      document.getElementById('some').classList.add('gradient-text')
-    }, 3000)
+      const text = document.getElementById('sidebar')
+      const signature = document.getElementById('signature')
+
+      text.classList.add('in-view')
+      signature.classList.add('in-view')
+    }, 200)
 
     setTimeout(() => {
       const text = document.getElementById('animateFirst')
@@ -227,6 +237,11 @@ export default {
       const text = document.getElementById('animateSecond')
       text.classList.add('in-view')
     }, 500)
+
+    setTimeout(() => {
+      const sayHello = document.getElementById('animateThird')
+      sayHello.classList.add('in-view')
+    }, 700)
   },
 
   methods: {
@@ -289,8 +304,6 @@ export default {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
-  line-height: 1;
 }
 
 @keyframes gradient-shift {
@@ -308,28 +321,27 @@ body {
   }
 }
 
-@supports (-webkit-text-fill-color: transparent) {
-  .gradient-text {
-    background: linear-gradient(
-      264.51deg,
-      #ffe580 4.38%,
-      #ff7571 11.51%,
-      #ff7270 25.06%,
-      #ea5dad 36.04%,
-      #c2a0fd 47.63%,
-      #9867f0 59.03%,
-      #3bf0e4 69.96%,
-      #33ce43 83.74%,
-      #b2f4b6 95.62%
-    );
-    background-position: 58% 50%;
-    background-size: 500%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-animation: gradient-shift 30s ease infinite;
-    animation: gradient-shift 30s ease infinite;
-    -webkit-text-fill-color: transparent;
-  }
+.gradient-text {
+  background: linear-gradient(
+    264.51deg,
+    #ffe580 4.38%,
+    #ff7571 11.51%,
+    #ff7270 25.06%,
+    #ea5dad 36.04%,
+    #c2a0fd 47.63%,
+    #9867f0 59.03%,
+    #3bf0e4 69.96%,
+    #33ce43 83.74%,
+    #b2f4b6 95.62%
+  );
+  background-position: 58% 50%;
+  background-size: 500%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: gradient-shift 30s ease infinite;
+  animation: gradient-shift 30s ease infinite;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 [data-animate-in] {
