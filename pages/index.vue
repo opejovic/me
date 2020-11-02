@@ -78,7 +78,7 @@
           <div
             id="animateFirstMobile"
             data-animate-in="up"
-            class="flex md:hidden text-6xl tracking-tighter font-alliance-medium text-teal-400"
+            class="flex md:hidden text-6xl tracking-tighter font-alliance-medium text-gradient-purple"
           >
             <h1>
               <p>Hi.</p>
