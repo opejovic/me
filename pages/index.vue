@@ -67,7 +67,18 @@
           <div
             id="animateFirst"
             data-animate-in="up"
-            class="text-6xl md:text-7xl tracking-tighter font-alliance-medium gradient-text"
+            class="hidden md:block md:text-7xl tracking-tighter font-alliance-medium gradient-text"
+          >
+            <h1>
+              <p>Hi.</p>
+              <p>I'm Ognjen,</p>
+              <p>a web developer.</p>
+            </h1>
+          </div>
+          <div
+            id="animateFirstMobile"
+            data-animate-in="up"
+            class="flex md:hidden text-6xl tracking-tighter font-alliance-medium text-teal-400"
           >
             <h1>
               <p>Hi.</p>
@@ -231,6 +242,8 @@ export default {
     setTimeout(() => {
       const text = document.getElementById('animateFirst')
       text.classList.add('in-view')
+      const mobileText = document.getElementById('animateFirstMobile')
+      mobileText.classList.add('in-view')
     }, 300)
 
     setTimeout(() => {
